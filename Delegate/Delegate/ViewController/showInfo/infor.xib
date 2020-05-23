@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mUj-QH-j6t">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mUj-QH-j6t" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5Xw-Im-5ko"/>
+                <constraint firstItem="mUj-QH-j6t" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Yh7-JN-lrk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mUj-QH-j6t" secondAttribute="bottom" id="fOK-UI-hs1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mUj-QH-j6t" secondAttribute="trailing" id="o5O-o3-yMb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="112"/>
+        </view>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="97" id="JOu-20-c2Q" customClass="TableViewCell" customModule="Delegate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="97"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JOu-20-c2Q" id="ohi-rD-Vqh">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssa-aV-byi">
+                        <rect key="frame" x="20" y="10" width="50" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvV-6f-R6i">
+                        <rect key="frame" x="20" y="41" width="50" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46g-Cu-4ri">
+                        <rect key="frame" x="90" y="10" width="304" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPT-wQ-Ekr">
+                        <rect key="frame" x="90" y="41" width="304" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="46g-Cu-4ri" secondAttribute="trailing" constant="20" id="350-Ab-fX8"/>
+                    <constraint firstItem="46g-Cu-4ri" firstAttribute="leading" secondItem="ssa-aV-byi" secondAttribute="trailing" constant="20" id="BnI-CY-PEw"/>
+                    <constraint firstItem="ssa-aV-byi" firstAttribute="centerY" secondItem="46g-Cu-4ri" secondAttribute="centerY" id="DgC-Nf-yVS"/>
+                    <constraint firstItem="ssa-aV-byi" firstAttribute="leading" secondItem="ohi-rD-Vqh" secondAttribute="leading" constant="20" id="V4i-P4-bFO"/>
+                    <constraint firstItem="dvV-6f-R6i" firstAttribute="leading" secondItem="ohi-rD-Vqh" secondAttribute="leading" constant="20" id="YJm-fG-zsE"/>
+                    <constraint firstAttribute="trailing" secondItem="RPT-wQ-Ekr" secondAttribute="trailing" constant="20" id="cI4-6V-OPH"/>
+                    <constraint firstItem="dvV-6f-R6i" firstAttribute="width" secondItem="ssa-aV-byi" secondAttribute="width" id="hOB-AZ-Szo"/>
+                    <constraint firstItem="dvV-6f-R6i" firstAttribute="centerY" secondItem="RPT-wQ-Ekr" secondAttribute="centerY" id="mtC-Is-5oO"/>
+                    <constraint firstItem="RPT-wQ-Ekr" firstAttribute="leading" secondItem="dvV-6f-R6i" secondAttribute="trailing" constant="20" id="rd2-2m-ZjI"/>
+                    <constraint firstItem="ssa-aV-byi" firstAttribute="top" secondItem="ohi-rD-Vqh" secondAttribute="top" constant="10" id="usQ-mh-mHE"/>
+                    <constraint firstItem="dvV-6f-R6i" firstAttribute="top" secondItem="ssa-aV-byi" secondAttribute="bottom" constant="10" id="yw3-Fa-8en"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ageLabel" destination="dvV-6f-R6i" id="jFv-W4-pQa"/>
+                <outlet property="nameLabel" destination="ssa-aV-byi" id="mCz-b3-Exl"/>
+            </connections>
+            <point key="canvasLocation" x="789.85507246376812" y="-150.33482142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

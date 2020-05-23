@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dq0-Ud-upb">
+                    <rect key="frame" x="20" y="74" width="50" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9e-nR-CqM">
+                    <rect key="frame" x="20" y="120" width="50" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="brM-77-aK0">
+                    <rect key="frame" x="90" y="67.5" width="304" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xLo-bX-6g6">
+                    <rect key="frame" x="90" y="113.5" width="304" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="brM-77-aK0" secondAttribute="trailing" constant="20" id="4Yf-hf-rc5"/>
+                <constraint firstItem="xLo-bX-6g6" firstAttribute="leading" secondItem="j9e-nR-CqM" secondAttribute="trailing" constant="20" id="HbB-HD-d1W"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xLo-bX-6g6" secondAttribute="trailing" constant="20" id="Ie8-O5-fET"/>
+                <constraint firstItem="j9e-nR-CqM" firstAttribute="centerY" secondItem="xLo-bX-6g6" secondAttribute="centerY" id="RSF-A1-jMa"/>
+                <constraint firstItem="j9e-nR-CqM" firstAttribute="width" secondItem="dq0-Ud-upb" secondAttribute="width" id="U20-Iq-qVM"/>
+                <constraint firstItem="dq0-Ud-upb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="WD6-QU-XOR"/>
+                <constraint firstItem="dq0-Ud-upb" firstAttribute="centerY" secondItem="brM-77-aK0" secondAttribute="centerY" id="iC1-5w-hCs"/>
+                <constraint firstItem="dq0-Ud-upb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="mac-Ed-jVQ"/>
+                <constraint firstItem="j9e-nR-CqM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="nCc-G2-gdK"/>
+                <constraint firstItem="brM-77-aK0" firstAttribute="leading" secondItem="dq0-Ud-upb" secondAttribute="trailing" constant="20" id="qWv-09-YTb"/>
+                <constraint firstItem="j9e-nR-CqM" firstAttribute="top" secondItem="dq0-Ud-upb" secondAttribute="bottom" constant="25" id="woZ-PX-duE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="112"/>
+        </view>
+    </objects>
+</document>

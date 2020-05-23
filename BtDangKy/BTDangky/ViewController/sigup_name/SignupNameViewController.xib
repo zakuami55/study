@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignupNameViewController" customModule="BTDangky" customModuleProvider="target">
+            <connections>
+                <outlet property="fullNameTextField" destination="2kT-Zb-bYI" id="yoz-Ur-89n"/>
+                <outlet property="view" destination="iN0-l3-epB" id="eLc-xP-O8i"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn tên là gì?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCv-6J-clR">
+                    <rect key="frame" x="115.33333333333333" y="68" width="144.66666666666669" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="5Dg-cB-kaP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="3ky-q3-lNr">
+                    <rect key="frame" x="24" y="150" width="327" height="120"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Họ và tên" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2kT-Zb-bYI">
+                            <rect key="frame" x="0.0" y="0.0" width="327" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="X5z-ee-6Ke"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4I-vO-56g">
+                            <rect key="frame" x="0.0" y="72" width="327" height="48"/>
+                            <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="LUa-jf-Vw3"/>
+                            </constraints>
+                            <state key="normal" title="Tiếp theo">
+                                <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="nextButtonTapped:" destination="-1" eventType="touchUpInside" id="C2O-sT-5pk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3ky-q3-lNr" secondAttribute="trailing" constant="24" id="ACj-3k-Ofv"/>
+                <constraint firstItem="3ky-q3-lNr" firstAttribute="top" secondItem="PCv-6J-clR" secondAttribute="bottom" constant="48" id="R6J-Dv-FeO"/>
+                <constraint firstItem="3ky-q3-lNr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="lLw-Cn-uTi"/>
+                <constraint firstItem="PCv-6J-clR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="24" id="q3w-Nu-Hl5"/>
+                <constraint firstItem="PCv-6J-clR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zVu-0t-M2a"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="112"/>
+        </view>
+    </objects>
+</document>

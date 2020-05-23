@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OTPViewController" customModule="BTDangky" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="gyW-Pg-2v3"/>
+                <outletCollection property="otpTextField" destination="LxC-6t-Yy5" collectionClass="NSMutableArray" id="Jaa-Ez-Q7H"/>
+                <outletCollection property="otpTextField" destination="dMe-va-D28" collectionClass="NSMutableArray" id="73B-4o-V9v"/>
+                <outletCollection property="otpTextField" destination="aiZ-Ka-IUj" collectionClass="NSMutableArray" id="P0S-Td-5kO"/>
+                <outletCollection property="otpTextField" destination="uJR-di-Pw2" collectionClass="NSMutableArray" id="SgB-Zk-TNM"/>
+                <outletCollection property="otpTextField" destination="zjR-Gd-OQ7" collectionClass="NSMutableArray" id="2TQ-tP-LRw"/>
+                <outletCollection property="otpTextField" destination="VVp-JJ-EWc" collectionClass="NSMutableArray" id="N1o-40-Uf9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhập mã xác nhận" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Sb-gG-oAI">
+                    <rect key="frame" x="87" y="68" width="201" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="Fyo-YL-urh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mã xác nhận đã được gửi đến số điện thoại của bạn" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qS-rf-K9X">
+                    <rect key="frame" x="65" y="110" width="245" height="33.666666666666657"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="oz2-iz-TZA">
+                    <rect key="frame" x="24" y="183.66666666666666" width="327" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LxC-6t-Yy5">
+                            <rect key="frame" x="0.0" y="0.0" width="43.666666666666664" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="7eF-sc-gYA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dMe-va-D28">
+                            <rect key="frame" x="56.666666666666671" y="0.0" width="43.666666666666671" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aiZ-Ka-IUj">
+                            <rect key="frame" x="113.33333333333336" y="0.0" width="43.666666666666671" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uJR-di-Pw2">
+                            <rect key="frame" x="170" y="0.0" width="43.666666666666657" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zjR-Gd-OQ7">
+                            <rect key="frame" x="226.66666666666666" y="0.0" width="43.666666666666657" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VVp-JJ-EWc">
+                            <rect key="frame" x="283.33333333333331" y="0.0" width="43.666666666666686" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Không nhận được mã xác nhận?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4X-b0-bff">
+                    <rect key="frame" x="84.333333333333329" y="267.66666666666669" width="206.66666666666669" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Oh0-Yw-7wd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cL-aP-Zeg">
+                    <rect key="frame" x="166" y="295.66666666666669" width="43" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="SwJ-Lx-3p3"/>
+                    </constraints>
+                    <state key="normal" title="Gửi lại"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4qS-rf-K9X" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="51b-0a-bIj"/>
+                <constraint firstItem="2cL-aP-Zeg" firstAttribute="top" secondItem="Y4X-b0-bff" secondAttribute="bottom" constant="8" id="F2C-wq-UOz"/>
+                <constraint firstItem="4qS-rf-K9X" firstAttribute="top" secondItem="6Sb-gG-oAI" secondAttribute="bottom" constant="8" id="LTF-XJ-kGw"/>
+                <constraint firstItem="oz2-iz-TZA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="OAj-KI-LsU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oz2-iz-TZA" secondAttribute="trailing" constant="24" id="Vfb-VF-IfU"/>
+                <constraint firstItem="oz2-iz-TZA" firstAttribute="top" secondItem="4qS-rf-K9X" secondAttribute="bottom" constant="40" id="ajr-hf-HUn"/>
+                <constraint firstItem="6Sb-gG-oAI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="24" id="fiE-VI-YzN"/>
+                <constraint firstItem="4qS-rf-K9X" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="65" id="h3f-Du-JKs"/>
+                <constraint firstItem="Y4X-b0-bff" firstAttribute="top" secondItem="oz2-iz-TZA" secondAttribute="bottom" constant="40" id="jOI-sv-sh9"/>
+                <constraint firstItem="Y4X-b0-bff" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kM9-ed-gdf"/>
+                <constraint firstItem="6Sb-gG-oAI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ozi-ch-RSk"/>
+                <constraint firstItem="2cL-aP-Zeg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="t2z-S7-XVJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="112"/>
+        </view>
+    </objects>
+</document>
